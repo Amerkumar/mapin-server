@@ -27,4 +27,24 @@ public class WayPointResource {
         return wayPointService.addWaypoint(floorPlanId, wayPoint);
     }
 
+    @PUT
+    @Path("/{waypointid}")
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    public WayPoint updateWayPoint(@PathParam("floorplanid") String floorPlanId,
+                               @PathParam("waypointid") String waypointId,
+                               WayPoint wayPoint) {
+        wayPoint.setWayPointId(waypointId);
+        return wayPointService.updateWayPoint(floorPlanId, wayPoint);
+    }
+
+    @DELETE
+    @Path("/{waypointid}")
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.TEXT_PLAIN)
+    public int removeWayPoint(@PathParam("floorplanid") String floorPlanId,
+                              @PathParam("waypointid") String wayPointId) {
+        return wayPointService.removeWayPoint(floorPlanId, wayPointId);
+    }
+
 }

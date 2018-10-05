@@ -94,4 +94,64 @@ public class WayPointService {
         }
         return wayPoint;
     }
+
+    public WayPoint updateWayPoint(String floorPlanId,WayPoint wayPoint) {
+        String updateSql = "UPDATE " + WAYPOINTS_TABLE +
+                " SET "
+                + WAYPOINTS_LAT_COLUMN + " = " + wayPoint.getWayPointLat() + ","
+                + WAYPOINTS_LNG_COLUMN + " = " + wayPoint.getWayPointLng()
+                + " WHERE "
+                + WAYPOINTS_WAYPOINT_ID_COLUMN + " = " +  wayPoint.getWayPointId();
+
+        String selectSql = "SELECT * "
+                + " from " + WAYPOINTS_TABLE
+                + " WHERE " + WAYPOINTS_WAYPOINT_ID_COLUMN
+                + " = " + wayPoint.getWayPointId();
+
+
+        try (Connection conn = DbClass.getConnection()) {
+
+            Statement statement = conn.createStatement();
+            statement.executeUpdate(updateSql);
+
+            Statement selectStatement = conn.createStatement();
+            ResultSet rs = selectStatement.executeQuery(selectSql);
+
+            while(rs.next()) {
+                WayPoint resultWaypoint = new WayPoint();
+                resultWaypoint.setWayPointId(rs.getString(WAYPOINTS_WAYPOINT_ID_COLUMN));
+                resultWaypoint.setWayPointLat(rs.getDouble(WAYPOINTS_LAT_COLUMN));
+                resultWaypoint.setWayPointLng(rs.getDouble(WAYPOINTS_LNG_COLUMN));
+            }
+
+            rs.close();
+            statement.close();
+            selectStatement.close();
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+            System.out.println(ex.getMessage());
+        }
+        return wayPoint;
+    }
+
+    public int removeWayPoint(String floorplanid,
+                               String waypointid) {
+        String deleteSql = "DELETE " +
+                " FROM " + WAYPOINTS_TABLE +
+                " WHERE " + WAYPOINTS_WAYPOINT_ID_COLUMN + " = ?";
+
+        try (Connection conn = DbClass.getConnection()) {
+
+           PreparedStatement preparedStatement = conn.prepareStatement(deleteSql);
+           preparedStatement.setString(1, waypointid);
+
+           preparedStatement.executeUpdate();
+           conn.close();
+           preparedStatement.close();
+        } catch (SQLException exp) {
+            exp.printStackTrace();
+        }
+
+        return 200;
+    }
 }

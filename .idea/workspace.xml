@@ -6,33 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f3ccd49-dffd-4008-906f-387dd9db6d5a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_mysql_connector_java_5_1_40.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/mapin/database/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/mapin/model/WayPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/mapin/resource/WayPointResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/mapin/service/WayPointService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/mapin/database/DbClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/mapin/database/DbClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/mapin/model/Floor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/mapin/model/Floor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/mapin/resource/FloorPlanResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/mapin/resource/FloorPlanResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/mapin/service/FloorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/mapin/service/FloorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/mapin/database/DbClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/mapin/database/DbClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/mapin/model/Floor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/mapin/model/Floor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/mapin/resource/FloorPlanResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/mapin/resource/FloorPlanResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/mapin/service/FloorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/mapin/service/FloorService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/rest-server.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/rest-server.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/rest-server/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/rest-server/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/rest-server/WEB-INF/classes/app/mapin/database/DbClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/rest-server/WEB-INF/classes/app/mapin/database/DbClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/rest-server/WEB-INF/classes/app/mapin/model/Floor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/rest-server/WEB-INF/classes/app/mapin/model/Floor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/rest-server/WEB-INF/classes/app/mapin/resource/FloorPlanResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/rest-server/WEB-INF/classes/app/mapin/resource/FloorPlanResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/rest-server/WEB-INF/classes/app/mapin/service/FloorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/rest-server/WEB-INF/classes/app/mapin/service/FloorService.class" afterDir="false" />
-    </list>
+    <list default="true" id="0f3ccd49-dffd-4008-906f-387dd9db6d5a" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +73,7 @@
           <entry key="java" value="10" />
           <entry key="properties" value="2" />
           <entry key="sql" value="3" />
-          <entry key="xml" value="2" />
+          <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -107,7 +81,7 @@
           <entry key="JAVA" value="10" />
           <entry key="Properties" value="2" />
           <entry key="Scratch" value="3" />
-          <entry key="XML" value="2" />
+          <entry key="XML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.boot.mvc.usages" />
@@ -163,7 +137,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/app/mapin/service/WayPointService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="327">
@@ -171,6 +145,15 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/target/rest-server/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -226,15 +209,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/84a84d23-25af-4fd6-b02f-3314a8eff2ff/console.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="24" selection-start-column="24" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/app/mapin/database/DbClass.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="234">
@@ -282,6 +256,7 @@
         <option value="$PROJECT_DIR$/src/main/java/app/mapin/model/WayPoint.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/mapin/resource/WayPointResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/mapin/service/WayPointService.java" />
+        <option value="$PROJECT_DIR$/target/rest-server/WEB-INF/web.xml" />
       </list>
     </option>
   </component>
@@ -298,7 +273,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="1254" />
     <option name="y" value="-9" />
     <option name="width" value="1366" />
@@ -378,6 +353,19 @@
             </path>
             <path>
               <item name="rest-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rest-jdbc-server" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="rest-server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rest-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rest-jdbc-server" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="rest-server" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rest-server" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -394,7 +382,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538766709168" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538742009387" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.11" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -505,12 +493,12 @@
       <updated>1538691182373</updated>
       <workItem from="1538691188815" duration="526000" />
       <workItem from="1538692211772" duration="8095000" />
-      <workItem from="1538703617327" duration="11087000" />
+      <workItem from="1538703617327" duration="12241000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19708000" />
+    <option name="totallyTimeSpent" value="20862000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1382" height="744" extended-state="6" />
@@ -670,6 +658,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/rest-server/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
