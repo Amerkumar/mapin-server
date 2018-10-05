@@ -5,11 +5,11 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 public class Floor {
 
-    private long id;
+    private String id;
     private String location;
     private long floorNumber;
 
-    public Floor(long id, String location, long floorNumber) {
+    public Floor(String id, String location, long floorNumber) {
         this.id = id;
         this.location = location;
         this.floorNumber = floorNumber;
@@ -19,11 +19,11 @@ public class Floor {
     }
 
 
-    public long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
