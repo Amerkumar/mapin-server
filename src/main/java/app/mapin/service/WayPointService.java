@@ -98,40 +98,46 @@ public class WayPointService {
     public WayPoint updateWayPoint(String floorPlanId,WayPoint wayPoint) {
         String updateSql = "UPDATE " + WAYPOINTS_TABLE +
                 " SET "
-                + WAYPOINTS_LAT_COLUMN + " = " + wayPoint.getWayPointLat() + ","
-                + WAYPOINTS_LNG_COLUMN + " = " + wayPoint.getWayPointLng()
-                + " WHERE "
-                + WAYPOINTS_WAYPOINT_ID_COLUMN + " = " +  wayPoint.getWayPointId();
+                + WAYPOINTS_LAT_COLUMN + " =  ? ,"
+                + WAYPOINTS_LNG_COLUMN + " = ? WHERE "
+                + WAYPOINTS_WAYPOINT_ID_COLUMN + " = ? ; ";
+
 
         String selectSql = "SELECT * "
                 + " from " + WAYPOINTS_TABLE
                 + " WHERE " + WAYPOINTS_WAYPOINT_ID_COLUMN
-                + " = " + wayPoint.getWayPointId();
+                + " = ?;";
 
+
+        WayPoint resultWaypoint = null;
 
         try (Connection conn = DbClass.getConnection()) {
 
-            Statement statement = conn.createStatement();
-            statement.executeUpdate(updateSql);
+            PreparedStatement preparedStatement = conn.prepareStatement(updateSql);
+            preparedStatement.setDouble(1, wayPoint.getWayPointLat());
+            preparedStatement.setDouble(2, wayPoint.getWayPointLng());
+            preparedStatement.setString(3, wayPoint.getWayPointId());
+            preparedStatement.execute();
 
-            Statement selectStatement = conn.createStatement();
-            ResultSet rs = selectStatement.executeQuery(selectSql);
+            PreparedStatement selectStatement = conn.prepareStatement(selectSql);
+            selectStatement.setString(1, wayPoint.getWayPointId());
+            ResultSet rs = selectStatement.executeQuery();
 
             while(rs.next()) {
-                WayPoint resultWaypoint = new WayPoint();
+                resultWaypoint = new WayPoint();
                 resultWaypoint.setWayPointId(rs.getString(WAYPOINTS_WAYPOINT_ID_COLUMN));
                 resultWaypoint.setWayPointLat(rs.getDouble(WAYPOINTS_LAT_COLUMN));
                 resultWaypoint.setWayPointLng(rs.getDouble(WAYPOINTS_LNG_COLUMN));
             }
 
             rs.close();
-            statement.close();
+            preparedStatement.close();
             selectStatement.close();
         } catch (SQLException ex) {
             ex.printStackTrace();
             System.out.println(ex.getMessage());
         }
-        return wayPoint;
+        return resultWaypoint;
     }
 
     public int removeWayPoint(String floorplanid,

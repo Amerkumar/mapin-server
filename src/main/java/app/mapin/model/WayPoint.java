@@ -2,6 +2,7 @@ package app.mapin.model;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
+
 @XmlRootElement
 public class WayPoint {
 
