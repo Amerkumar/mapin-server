@@ -1,7 +1,6 @@
 package app.mapin.service;
 
 import app.mapin.database.DbClass;
-import app.mapin.model.Floor;
 import app.mapin.model.WayPoint;
 
 import java.sql.*;
@@ -22,9 +21,9 @@ public class WayPointService {
         List<WayPoint> wayPoints = new ArrayList<>();
 
 //        String sql = "select * " +
-//                "from " + FloorService.FLOOR_PLAN_TABLE
+//                "from " + FloorPlanService.FLOOR_PLAN_TABLE
 //                +" INNER JOIN " + WayPointService.WAYPOINTS_TABLE +
-//                " ON " + FloorService.FLOOR_PLAN_TABLE + "." + FloorService.FLOOR_ID_COLUMN +
+//                " ON " + FloorPlanService.FLOOR_PLAN_TABLE + "." + FloorPlanService.FLOOR_ID_COLUMN +
 //                " = " + WAYPOINTS_TABLE + "." + WAYPOINTS_FLOOR_PLAN_ID_COLUMN + ";"
 //                ;
 
