@@ -4229,22 +4229,32 @@
       <DataType>double(14,10 digit)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="981" parent="345" name="waypointid">
+    <column id="981" parent="344" name="Latitude">
+      <Position>6</Position>
+      <DataType>double(14,10 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="982" parent="344" name="Longitude">
+      <Position>7</Position>
+      <DataType>double(14,10 digit)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="983" parent="345" name="waypointid">
       <Position>1</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="982" parent="345" name="floorplanid">
+    <column id="984" parent="345" name="floorplanid">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="983" parent="345" name="waypointLat">
+    <column id="985" parent="345" name="waypointLat">
       <Position>3</Position>
       <DataType>double(14,10 digit)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="984" parent="345" name="waypointLng">
+    <column id="986" parent="345" name="waypointLng">
       <Position>4</Position>
       <DataType>double(14,10 digit)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
